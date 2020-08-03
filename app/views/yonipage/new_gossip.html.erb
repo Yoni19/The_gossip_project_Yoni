@@ -1,0 +1,14 @@
+
+    <p>Balance ton potin via le formulaire ci-dessous</p>
+    <form action='/new_gossip' method='POST'>
+    <input type ="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+        <b> <text-indent:50px> Saisis ici ton nom : <input type='text' name='gossip_author'/><br/>
+      <br>
+         Donne un titre à ton potin: <input type='text' name='gossip_title'/><br/>
+      <br>
+        Balance ton potin : <input type='text' name='gossip_content'/><br/>
+      <input type='submit'/>
+    </form>
+    
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title> The Gossip Project </title>
+  </head>
+  <body>
+    <h1> Bienvenue sur le site des potins !</h1>
+    <h2> Des potins a gogo, ici on raconte pas de mytho ! </h2>
+    <h3> Regarde, y'a déja plein de potins !</h3>
+
+    <%= link_to "J'ai un potin à raconter !", "/new_gossip" %>
+
+      <% Gossip.all.each do |gossip| %>
+    <p>
+      <%= gossip.user.first_name%><br>
+      <%= gossip.title%>
+      <%= link_to "Voir le potin", "/gossip/user/:user_gossip" %>
+
+      
+      </p>
+    <%end%>
+  </body>
+  </html>
