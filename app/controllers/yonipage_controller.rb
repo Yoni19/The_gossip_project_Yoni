@@ -3,6 +3,7 @@ class YonipageController < ApplicationController
   end
 
   def index
+    @gossips = Gossip.all
   end
 
   def contact
@@ -25,7 +26,7 @@ class YonipageController < ApplicationController
   end
 
   def gossip
-    @user = User.find(params[:user_gossip])
-  end
+    end
+  
 end
 

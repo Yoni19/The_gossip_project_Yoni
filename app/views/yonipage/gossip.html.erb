@@ -1,0 +1,15 @@
+
+
+<h1> Voila le potin que tu as demandé !</h1>
+
+
+
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Voici la page du potin n° <%= (params['id'].to_i) %></h5>
+    <h6 class="card-subtitle mb-2 text-muted">Auteur de ce potin : <%= params['gossip_author']%> </h6>
+    <p class="card-text">Voici le contenu du potin : <%= params['gossip_content'] %></p>
+
+  </div>
+</div>

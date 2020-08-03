@@ -10,13 +10,13 @@
     <%= link_to "J'ai un potin à raconter !", "/new_gossip" %>
 
       <% Gossip.all.each do |gossip| %>
-    <p>
-      <%= gossip.user.first_name%><br>
-      <%= gossip.title%>
-      <%= link_to "Voir le potin", "/gossip/user/:user_gossip" %>
 
-      
-      </p>
-    <%end%>
-  </body>
-  </html>
+      <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"> <%= gossip.user.first_name%><br></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= gossip.title%></h6>
+    <%= link_to "Voir le potin", "/gossip/user/" + gossip.user.id.to_s %>
+
+  </div>
+</div>
+   <%end%>

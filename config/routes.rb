@@ -6,6 +6,6 @@ get '/team', to: 'yonipage#team'
 get '/contact',to: 'yonipage#contact'
 get '/new_gossip', to: 'yonipage#new_gossip'
 post '/new_gossip', to: 'yonipage#new_gossip_post'
-get '/gossip/user/:user_gossip', to: 'yonipage#gossip'
+get '/gossip/user/:user', to: 'yonipage#gossip'
 
 end
